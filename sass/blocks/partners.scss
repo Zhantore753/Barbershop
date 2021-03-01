@@ -1,0 +1,45 @@
+.partners__wrap{
+    margin-top: 92px;
+}
+
+.partners__title{
+    &::before{
+        content: 'Наши партнеры';
+    }
+}
+
+.partners__list{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+
+    img{
+        padding-right: 60px;
+        width: 30%;
+        max-width: 300px;
+        height: 100%;
+    
+        &:nth-last-child(1){
+            padding-right: 0;
+        }
+    }
+}
+
+@media(max-width: 620px){
+    .partners__wrap{
+        margin-top: 50px;
+    }
+
+    
+    .partners__list{
+        margin-top: 23px;
+
+        img{
+            padding-right: 10px;
+        
+            &:nth-last-child(1){
+                padding-right: 0;
+            }
+        }
+    }
+}

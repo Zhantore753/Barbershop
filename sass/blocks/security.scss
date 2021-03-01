@@ -1,0 +1,34 @@
+.security__wrap{
+    margin-top: 92px;
+    background: url('../img/security__bg.png') 720px 60px no-repeat;
+}
+
+.security__title{
+    &::before{
+        content: 'Безопасность';
+    }
+}
+
+.security__description{
+    margin: 32px 0 0 0;
+    max-width: 680px;
+    font-size: px-to-rem(18px);
+    line-height: px-ro-rem(21px);
+}
+
+@media(max-width: 880px){
+    .security__wrap{
+        background: none;
+    }
+}
+
+@media(max-width: 620px){
+    .security__wrap{
+        margin-top: 50px;
+    }
+
+    .security__description{
+        font-size: px-to-rem(14px);
+        line-height: px-ro-rem(16px);
+    }
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+
+@import "blocks/nav.scss";
+@import "blocks/menu.scss";
+@import "blocks/header.scss";
+@import "blocks/title.scss";
+@import "blocks/advantages.scss";
+@import "blocks/security.scss";
+@import "blocks/partners.scss";
+@import "blocks/services.scss";
+@import "blocks/master.scss";
+@import "blocks/review.scss";
+@import "blocks/schedule.scss";

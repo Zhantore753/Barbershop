@@ -1,0 +1,67 @@
+.schedule{
+    background: url("../img/map.png") center no-repeat;
+    background-size: cover;
+}
+
+.schedule__wrap{
+    margin-top: 50px;
+    padding-top: 108px;
+    padding-bottom: 140px;
+}
+
+.schedule__outer{
+    margin-left: 5%;
+    border: 1px solid $brown;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 260px;
+}
+
+.schedule__inner{
+    max-width: inherit;
+    max-height: inherit;
+    box-shadow: 3px 5px 15px 0px rgba(224,69,4,0.5);
+    border-radius: 4px;
+    background-color: $white;
+    padding: 30px 0 12px 27px;
+    
+    p, img{
+        padding-left: 48px;
+    }
+}
+
+.schedule__location{
+    background: url('../img/schedule__map.svg') left center no-repeat;
+}
+
+.schedule__time{
+    background: url('../img/schedule__clock.svg') left center no-repeat;
+}
+
+.schedule__phone{
+    background: url('../img/schedule__phone.svg') left center no-repeat;
+}
+
+.schedule-2{
+    display: none;
+}
+
+.schedule__wrap-2{
+    display: flex;
+    justify-content: center;
+}
+
+.schedule__list{
+    p, img{
+        padding-left: 48px;
+    }
+}
+
+@media(max-width: 580px){
+    .schedule__outer{
+        display: none;
+    }
+    .schedule-2{
+        display: block;
+    }
+}

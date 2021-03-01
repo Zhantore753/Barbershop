@@ -1,0 +1,112 @@
+.header__wrap{
+    background: url('../img/header-bg-3.png') 480px -115px no-repeat;
+
+    &::before{
+        content: '';
+        z-index: -1;
+        top: 0px;
+        position: absolute;
+        width: 100%;
+        max-width: 760px;
+        height: 100%;
+        background: url('../img/header-bg-1.png') -50px 250px no-repeat;
+    }
+
+    &::after{
+        content: '';
+        z-index: -1;
+        top: 0px;
+        position: absolute;
+        width: 100%;
+        max-width: 760px;
+        height: 100%;
+        background: url('../img/header-bg-2.png') 385px 12px no-repeat;
+        background: cover;
+    }
+}
+
+.header__title{
+    font-family: 'Aquarelle', arial;
+    font-size: px-to-rem(100px);
+    line-height: px-to-rem(145px);
+    font-weight: 500;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.header__subtitle{
+    font-family: 'Oranienbaum', serif;
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(25px);
+    margin: 0;
+    padding-bottom: 200px;
+}
+
+@media(max-width:792px){
+    .header__wrap{
+        &::before{
+            background: url('../img/header-bg-1.png') -50px 200px no-repeat;
+            max-width: 590px;
+        }
+
+        &::after{
+            background: url('../img/header-bg-2.png') 200px -100px no-repeat;
+            max-width: 590px;
+        }
+    }
+
+    .header__title{
+        font-size: px-to-rem(72px);
+        line-height: px-to-rem(90px);
+    }
+    .header__subtitle{
+        font-size: px-to-rem(18px);
+        line-height: px-to-rem(22px);
+    }
+}
+
+@media(max-width:620px){
+    .header__wrap{
+        background: linear-gradient(180deg, rgba(224, 69, 4, 0.6) 0%, rgba(224, 69, 4, 0) 100%);
+        &::before{
+            background: url('../img/header-bg-1.png') -50px 200px no-repeat;
+            max-width: 480px;
+        }
+
+        &::after{
+            background: url('../img/header-bg-2.png') 50px -100px no-repeat;
+            max-width: 480px;
+            left: 50px;
+        }
+    }
+
+    .header__title{
+        text-align: center;
+        font-size: px-to-rem(38px);
+        line-height: px-to-rem(60px);
+    }
+    .header__subtitle{
+        text-align: center;
+    }
+}
+
+@media(max-width:576px){
+    .header__wrap{
+        background: linear-gradient(180deg, rgba(224, 69, 4, 0.6) 0%, rgba(224, 69, 4, 0) 100%);
+        &::before{
+            width: 0;
+            height: 0;
+            background: none;
+        }
+
+        &::after{
+            background: url('../img/header-bg-2.png') 100px 66px no-repeat;
+            background-size: 80%;
+            max-width: 270px;
+            left: 50px;
+        }
+    }
+    .header__subtitle{
+        display: none;
+    }
+}

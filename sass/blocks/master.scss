@@ -1,0 +1,127 @@
+.master__wrap{
+    margin-top: 92px;
+}
+
+.master__title{
+    &::before{
+        content: 'Мастера';
+    }
+}
+
+.master__slider{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.master__slider-btn{
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.master__next{
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.master__image{
+    max-width: 380px;
+    height: 100%;
+}
+
+.master__slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.master__content{
+    margin-left: 30px;
+    p{
+        font-size: 20px;
+        line-height: 23px;
+        &:nth-child(1){
+            font-size: 33px;
+            line-height: 38px;
+        }
+
+        &:last-child{
+            background: url('/img/phone.svg') left center no-repeat;
+            // background-size: cover;
+            padding-left: 38px;
+        }
+    }
+}
+
+.master__counter{
+    float: right;
+}
+
+.master__current{
+    color: $brown;
+    padding-right: 6px;
+}
+
+.master__warning{
+    margin-top: 30px;
+}
+
+@media(max-width: 700px){
+    .master__content{
+        margin-left: 10px;
+    }
+
+    .master__image{
+        max-width: 300px;
+        height: 100%;
+    }
+}
+
+@media(max-width: 620px){
+    .master__wrap{
+        margin-top: 50px;
+    }
+
+    .master__slider{
+        margin-top: 20px;
+    }
+
+    .master__slider-btn{
+        height: 16px;
+        width: 16px;
+    }   
+
+    .master__content{
+        p{
+            font-size: 14px;
+            line-height: 17px;
+            &:nth-child(1){
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            &:nth-child(3){
+                display: none;
+            }
+    
+            &:last-child{
+                padding-top: 7px;
+                padding-left: 38px;
+            }
+        }
+    }
+
+    .master__image{
+        max-width: 140px;
+        height: 100%;
+    }
+}
